@@ -22,7 +22,6 @@ section, header, footer {
 }
 
 section, header {
-    margin-bottom: 0.4rem;
 }
 
 p, blockquote {
@@ -42,10 +41,14 @@ h2 {
     margin-bottom: 0,5rem;
 }
 
+p {
+    margin: 1rem 0;
+}
+
 blockquote {
 font-style: italic;
 font-size: 1.999rem;
-color: mediumpurple;
+color: grey;
 hanging-punctuation: first;
 text-indent: -0.7rem;
 }
@@ -53,22 +56,24 @@ text-indent: -0.7rem;
 blockquote cite {
     font-style: normal;
     font-size: 1.5rem;
-    color: mediumpurple;
+    color: grey;
 }
-
+.leader {
+    text-transform: uppercase;
+}
 /*-- Styling Links --*/
 a {
-    color:mediumpurple;
+    color:lightslategray;
     text-decoration: none;
 }
 
 a:hover {
-    color: mediumpurple;
+    color: lightslategray;
     border-bottom: 1xp dotted;
 }
 
 
-/*-- Nagigation --*/
+/*-- Navigation --*/
 
 nav {
     position: fixed;
@@ -76,7 +81,7 @@ nav {
     left: 0;
     margin: 0;
     width: 100%;
-    background: mediumpurple;
+    background: slategray;
     padding: 1.5rem 0;
     font-size: 0.75rem;
 }
@@ -101,7 +106,7 @@ color: #f7f7f7;
 
 nav a:hover {
     border-bottom: none;
-    color:mediumpurple;
+    color:lightslategray;
     transition: all 0.3s ease-in-out;;
 }
 
@@ -126,13 +131,13 @@ th {
     font-weight: normal;
     text-align: left;
     color: white;
-    background:mediumpurple;
+    background: slategray;
     border: 2px solid white}
 
-th,td {padding: 0,6em;}
+th,td {padding: 0.6em;}
 
 table, td {
-    background: papayawhip;
+    background:peachpuff;
     border: 2px solid white;}
 
 
@@ -140,13 +145,63 @@ table, td {
     img{
 
         display:block;
-        margin: 2rem 0 2rem;
+        margin: 3rem 0;
         padding: 0px;
         max-width: 100%;
     }
 
+hr {
+    height: 1px;
+    margin: 100px 0;
+    background-color: lightslategrey;
+    color: lightslategray;
+    border: 0 none;
+
+}
+
 /*-- Styling the footer--*/ 
 footer {
+    background: lightslategray;
     text-align: center;
-    font-size: 0.9rem;
-    padding-bottom: 4rem;}
+    font-size: 0.75rem;
+    color: #f7f7f7;
+    padding: 4em 0 3em 0
+    }
+    
+    footer p {
+    width:80%;
+    margin: auto;
+    }
+    
+    .connections{
+    position: relative;
+    margin: 0 auto;
+    }
+    .connections ul{
+    margin: 0;
+    padding: 0;
+    }
+    .connections li{
+    margin: 0 10px;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    }
+    .connections a:link{
+    border-bottom: none;
+    }
+    .connections img,
+    .connections svg{
+    border: none;
+    }
+    .connections a:hover img,
+    .connections a:hover svg{
+    border-bottom: none;}
+    .connections svg {
+    margin: 1em auto;}
+    .connections a:hover svg path {
+    fill: peachpuff;
+    transition: all 0.2s ease-in-out;}
+    footer .connections a:hover svg path {
+    fill: peachpuff;
+    transition: all 0.2s ease-in-out;}
